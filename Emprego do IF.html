@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+var vitórias = parseInt(prompt("Qual é o número de vitórias?"));
+
+var empates = parseInt(prompt("Qual é o número de empates?"));
+
+var pontos = (vitórias * 3) + empates;
+
+
+
+
+if (pontos > 65) {
+
+mostra("Seu time está na Libertadores");
+
+
+}
+
+
+if (pontos < 45) {
+
+
+mostra("Seu time foi rebaixado");
+
+}
+
+
+if (pontos >= 45 && pontos <= 65) {
+
+
+mostra("Seu time foi pra Sul Americana o só ficou no meio da tabela.");
+
+}
+</script>
